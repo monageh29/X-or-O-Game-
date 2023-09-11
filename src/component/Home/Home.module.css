@@ -1,0 +1,96 @@
+body {
+    background-color: #131722;
+    color: #fff;
+    font-family: "Montserrat Alternates";
+    height: 100vh;
+  }
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+  
+}
+
+
+.gamebored{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 300px;
+    border: solid 2px white;
+
+}
+
+.circle , .cross{
+    font-size: 100px;
+}
+.word{
+    font-size: 50px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.icon{
+    font-size: 38px;
+
+}
+/* Animation property */
+button {
+    animation: wiggle 2s linear infinite;
+  }
+  
+  /* Keyframes */
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+  
+  /* body {
+    background: #000;
+  } */
+  
+  button {
+    position: absolute;
+    left: calc(50% - 2.5em);
+    top: calc(90% - 1em);
+    
+    height: 5me;
+    width: 5em;
+    
+    background: #444;
+    background: black;
+    border: none;
+    border-top: 3px solid #444;
+    border-radius: 0 0 0.2em 0.2em;
+    color: #fff;
+    font-family: Helvetica, Arial, Sans-serif;
+    font-size: 1em;
+    transform-origin: 50% 5em;
+  }
